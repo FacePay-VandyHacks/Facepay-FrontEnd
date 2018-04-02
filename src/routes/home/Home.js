@@ -10,6 +10,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { Row, Col } from 'react-bootstrap';
 import s from './Home.css';
 
 class Home extends React.Component {
@@ -26,6 +27,13 @@ class Home extends React.Component {
   render() {
     return (
       <div className={s.root}>
+        <Row>
+          <Col xs={2} md={2} mdOffset={2} />
+          <Col className={s.trythis} xs={12} md={8} mdOffset={2}>
+            {' '}
+            H{' '}
+          </Col>
+        </Row>
         <div className={s.container}>
           <h1>React.js News</h1>
           {this.props.news.map(item => (
