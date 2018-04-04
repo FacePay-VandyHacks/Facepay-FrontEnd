@@ -12,8 +12,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
 import Link from '../Link';
 import Navigation from '../Navigation';
-import logoUrl from './logo-small.png';
-import logoUrl2x from './logo-small@2x.png';
+import logoUrl from './FacePay.png';
 
 class Header extends React.Component {
   render() {
@@ -24,16 +23,19 @@ class Header extends React.Component {
           <Link className={s.brand} to="/">
             <img
               src={logoUrl}
-              srcSet={`${logoUrl2x} 2x`}
-              width="38"
-              height="38"
+              srcSet={`${logoUrl}`}
+              width="110"
+              height="60"
               alt="React"
             />
-            <span className={s.brandTxt}>Your Company</span>
           </Link>
           <div className={s.banner}>
-            <h1 className={s.bannerTitle}>React</h1>
-            <p className={s.bannerDesc}>Complex web apps made easy</p>
+            <p className={s.bannerTitle}>FacePay</p>
+            <p className={s.bannerDesc}>
+              <em>
+                Pay With Your <s>Cash</s> <s>Card</s> <s>Phone</s> Face{' '}
+              </em>
+            </p>
           </div>
         </div>
       </div>
