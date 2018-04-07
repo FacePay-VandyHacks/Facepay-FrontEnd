@@ -22,7 +22,7 @@
 .link,
 .link:active,
 .link:visited {
-  color: #06c;
+  color: rgb(0, 102, 255);
 }
 
 .link:hover {
