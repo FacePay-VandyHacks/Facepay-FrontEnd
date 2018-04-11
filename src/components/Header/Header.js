@@ -24,7 +24,7 @@ class Header extends React.Component {
             <img
               src={logoUrl}
               srcSet={`${logoUrl}`}
-              width="110"
+              width="170"
               height="60"
               alt="React"
             />
@@ -32,9 +32,7 @@ class Header extends React.Component {
           <div className={s.banner}>
             <p className={s.bannerTitle}>FacePay</p>
             <p className={s.bannerDesc}>
-              <em>
-                Pay With Your <s>Cash</s> <s>Card</s> <s>Phone</s> Face{' '}
-              </em>
+              <em>Change the way you pay!</em>
             </p>
           </div>
         </div>
