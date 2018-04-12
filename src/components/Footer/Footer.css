@@ -12,6 +12,7 @@
 .root {
   background: #333;
   color: #fff;
+  height: 70px;
 }
 
 .container {
@@ -31,7 +32,7 @@
 
 .text,
 .link {
-  padding: 2px 5px;
+  padding: 5px 5px;
   font-size: 1em;
 }
 
