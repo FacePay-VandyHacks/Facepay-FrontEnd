@@ -16,6 +16,7 @@ import bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import normalizeCss from 'normalize.css';
 import s from './Layout.css';
 import Header from '../Header';
+import Footer from '../Footer';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -25,8 +26,11 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        {this.props.children}
+        <div className={s.wrap}>
+          <Header />
+          {this.props.children}
+        </div>
+        <Footer />
       </div>
     );
   }
